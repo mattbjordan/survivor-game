@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://blmfsk14dssm3"]
+
+[ext_resource type="Texture2D" uid="uid://14cks7aapsop" path="res://assets/sprites/Prototype_Character/Prototype_Character.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://d0kuxnmevw18y" path="res://scenes/player.gd" id="1_g2els"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
+atlas = ExtResource("1_3vyb7")
+region = Rect2(8, 8, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qhqgy"]
+size = Vector2(6, 10)
+
+[node name="Player" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_g2els")
+speed = 133.33
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_g2els")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_qhqgy")
