@@ -1,10 +1,10 @@
 extends CharacterBody2D
-
+class_name Player
 
 @export var speed: float
 
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	get_movement()
 	move_and_slide()
 
