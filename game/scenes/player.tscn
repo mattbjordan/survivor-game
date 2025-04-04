@@ -494,7 +494,7 @@ graph_offset = Vector2(-285.55, -69)
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_g2els")
-speed = 133.33
+speed = 75.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false

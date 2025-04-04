@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bv7ic48obofcm"]
+
+[ext_resource type="Script" uid="uid://dt3ro67w88kdo" path="res://scripts/enemy_spawner.gd" id="1_ks1gq"]
+
+[node name="EnemySpawner" type="Node"]
+script = ExtResource("1_ks1gq")
+spawn_away_from_radius = 75.0
+spawn_radius = 500.0
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="SpawnedEnemies" type="Node" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -3,7 +3,6 @@ class_name Player
 
 @export var speed: float
 
-
 func _physics_process(_delta: float) -> void:
 	get_movement()
 	move_and_slide()
